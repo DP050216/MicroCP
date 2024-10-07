@@ -1,0 +1,746 @@
+{
+	"info": {
+		"_postman_id": "655a9ef2-e102-4373-9f83-db809db961f8",
+		"name": "Pruebas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16875008",
+		"_collection_link": "https://winter-robot-80957.postman.co/workspace/Team-Workspace~0fc89d4b-6710-45af-8562-66960c3760e7/collection/16875008-655a9ef2-e102-4373-9f83-db809db961f8?action=share&source=collection_link&creator=16875008"
+	},
+	"item": [
+		{
+			"name": "Movimientos",
+			"item": [
+				{
+					"name": "Insertar Movimientos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"1234567890\",\r\n  \"tipoCuenta\": \"Ahorros\",\r\n  \"saldoInicial\": -10,\r\n  \"estado\": \"True\",\r\n  \"movimiento\": \"Retiro\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7245/Movimientos",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7245",
+							"path": [
+								"Movimientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar Movimientos ejercicio 4.1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"478758\",\r\n  \"tipoCuenta\": \"Ahorros\",\r\n  \"Valor\":-575,\r\n  \"estado\": \"True\",\r\n  \"movimiento\": \"Retiro de 575\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7245/Movimientos",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7245",
+							"path": [
+								"Movimientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar Movimientos ejercicio 4.2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"225487\",\r\n  \"tipoCuenta\": \"Corriente\",\r\n  \"Valor\":600,\r\n  \"estado\": \"True\",\r\n  \"movimiento\": \"Deposito de 600\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7245/Movimientos",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7245",
+							"path": [
+								"Movimientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar Movimientos ejercicio 4.3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"495878\",\r\n  \"tipoCuenta\": \"Ahorros\",\r\n  \"Valor\":150,\r\n  \"estado\": \"True\",\r\n  \"movimiento\": \"Deposito de 150\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7245/Movimientos",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7245",
+							"path": [
+								"Movimientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar Movimientos ejercicio 4.4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"496825\",\r\n  \"tipoCuenta\": \"Ahorros\",\r\n  \"Valor\":-540,\r\n  \"estado\": \"True\",\r\n  \"movimiento\": \"Retiro de 540\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7245/Movimientos",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7245",
+							"path": [
+								"Movimientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar Movimientos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7245/Movimientos",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7245",
+							"path": [
+								"Movimientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar Movimientos Por Fecha",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7245/Movimientos/Fecha?dtFechaInicio=10%2F06%2F2024&dtFechaFin=10%2F07%2F2024",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7245",
+							"path": [
+								"Movimientos",
+								"Fecha"
+							],
+							"query": [
+								{
+									"key": "dtFechaInicio",
+									"value": "10%2F06%2F2024"
+								},
+								{
+									"key": "dtFechaFin",
+									"value": "10%2F07%2F2024"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar Movimientos x Cliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7245/Movimientos/NumeroCuenta?NumeroCuenta=478758",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7245",
+							"path": [
+								"Movimientos",
+								"NumeroCuenta"
+							],
+							"query": [
+								{
+									"key": "NumeroCuenta",
+									"value": "478758"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizacion Movimientos",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idMovimiento\": \"3\",\r\n    \"numeroCuenta\": \"495878\",\r\n    \"tipoCuenta\": \"Ahorros\",\r\n    \"tipoMovimiento\": \"D\",\r\n    \"Valor\": 150,\r\n    \"estado\": \"True\",\r\n    \"movimiento\": \"Actualizacion\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7245/Movimientos",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7245",
+							"path": [
+								"Movimientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Movimientos",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idMovimiento\": \"2\",\r\n    \"numeroCuenta\": \"225487\",\r\n    \"tipoCuenta\": \"Ahorros\",\r\n    \"tipoMovimiento\": \"D\",\r\n    \"Valor\": 100,\r\n    \"estado\": \"True\",\r\n    \"movimiento\": \"Actualizacion\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7245/Movimientos",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7245",
+							"path": [
+								"Movimientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Movimientos",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7245/Movimientos?Id=5",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7245",
+							"path": [
+								"Movimientos"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cuentas",
+			"item": [
+				{
+					"name": "Consultar Cuentas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7245/Cuentas",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7245",
+							"path": [
+								"Cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar Cuentas Jose Lema",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"478758\",\r\n  \"tipoCuenta\": \"Ahorros\",\r\n  \"saldoInicial\": \"2000\",\r\n  \"estado\": \"True\",\r\n  \"cliente\": \"Jose Lema\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7245/Cuentas",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7245",
+							"path": [
+								"Cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar Cuentas Marianela Montalvo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"225487\",\r\n  \"tipoCuenta\": \"Corriente\",\r\n  \"saldoInicial\": \"100\",\r\n  \"estado\": \"True\",\r\n  \"cliente\": \"Marianela Montalvo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7245/Cuentas",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7245",
+							"path": [
+								"Cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar Cuentas Juan Osorio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"495878\",\r\n  \"tipoCuenta\": \"Ahorros\",\r\n  \"saldoInicial\": \"0\",\r\n  \"estado\": \"True\",\r\n  \"cliente\": \"Juan Osorio\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7245/Cuentas",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7245",
+							"path": [
+								"Cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar Cuentas Marianela Montalvo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"496825\",\r\n  \"tipoCuenta\": \"Ahorros\",\r\n  \"saldoInicial\": \"540\",\r\n  \"estado\": \"True\",\r\n  \"cliente\": \"Marianela Montalvo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7245/Cuentas",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7245",
+							"path": [
+								"Cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar Cuentas Jose Lema",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"585545\",\r\n  \"tipoCuenta\": \"Corriente\",\r\n  \"saldoInicial\": \"1000\",\r\n  \"estado\": \"True\",\r\n  \"cliente\": \"Jose Lema\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7245/Cuentas",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7245",
+							"path": [
+								"Cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Cuenta",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"225487\",\r\n  \"tipoCuenta\": \"Ahorros\",\r\n  \"saldoInicial\": \"1000\",\r\n  \"estado\": \"False\",\r\n  \"cliente\": \"Pedro Perez\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7245/Cuentas",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7245",
+							"path": [
+								"Cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Cuenta",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"496825\",\r\n  \"tipoCuenta\": \"Corriente\",\r\n  \"saldoInicial\": \"10\",\r\n  \"estado\": \"False\",\r\n  \"cliente\": \"Francisco Jeremias\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7245/Cuentas",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7245",
+							"path": [
+								"Cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Cuenta",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7245/Cuentas?numeroCta=10",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7245",
+							"path": [
+								"Cuentas"
+							],
+							"query": [
+								{
+									"key": "numeroCta",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "Registrar Cliente Jose Lema",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombres\": \"Jose Lema\",\r\n  \"identificacion\":\"1234567890\",\r\n  \"direccion\": \"Otavalo sn y principal\",\r\n  \"telefono\": \"098254785\",\r\n  \"estado\": \"True\",\r\n  \"contrasena\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7284/Clientes",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7284",
+							"path": [
+								"Clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registrar Cliente Marianela Montalvo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombres\": \"Marianela Montalvo\",\r\n   \"identificacion\":\"1234567891\",\r\n  \"direccion\": \"Amazonas y NNUU\",\r\n  \"telefono\": \"097548965\",\r\n  \"estado\": \"True\",\r\n  \"contrasena\": \"5678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7284/Clientes",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7284",
+							"path": [
+								"Clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registrar Cliente Juan Osorio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombres\": \"Juan Osorio\",\r\n   \"identificacion\":\"1234567892\",\r\n  \"direccion\": \"13 junio y Equinoccial\",\r\n  \"telefono\": \"098874587\",\r\n  \"estado\": \"True\",\r\n  \"contrasena\": \"1245\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7284/Clientes",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7284",
+							"path": [
+								"Clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consulta Clientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7284/Clientes",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7284",
+							"path": [
+								"Clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Clientes",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clienteId\":\"7\",\r\n    \"nombres\": \"Juan Pelaes\",\r\n    \"identificacion\": \"1234567895\",\r\n    \"direccion\": \"13 junio y Equinoccial\",\r\n    \"telefono\": \"098874586\",\r\n    \"estado\": \"True\",\r\n    \"contrasena\": \"1245\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7284/Clientes",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7284",
+							"path": [
+								"Clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Clientes",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clienteId\":\"7\",\r\n    \"nombres\": \"Juan Pelaes\",\r\n    \"identificacion\": \"1234567895\",\r\n    \"direccion\": \"13 junio\",\r\n    \"telefono\": \"098874586\",\r\n    \"estado\": \"True\",\r\n    \"contrasena\": \"1245\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7284/Clientes",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7284",
+							"path": [
+								"Clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Clientes",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7284/Clientes?id=7",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7284",
+							"path": [
+								"Clientes"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
